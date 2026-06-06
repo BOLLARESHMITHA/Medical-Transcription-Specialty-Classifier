@@ -69,7 +69,7 @@ def load_model_artifacts():
         st.stop()
     
     # Load model
-    model = tf.keras.models.load_model(MODEL_PATH)
+    model = tf.keras.models.load_model(MODEL_PATH,compile=False)
     
     # Load supporting files
     with open(TOKENIZER_PATH, 'rb') as f:
